@@ -1,434 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Nguyen Nhat developer portfolio" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="webfonts/textfont/nova.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="icon" href="logo.ico" />
+    <title>Nguyen Nhat Portfolio</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Design By Ahmed Faheem">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="webfonts/textfont/nova.css" >
-  <link rel="stylesheet" href="css/animate.min.css">
-  <link rel="icon" href="logo.ico">
-  <title>Glazzy</title>
-    
-  <style>
-    ::-webkit-scrollbar {width: 6px;cursor: auto}
-    ::-webkit-scrollbar-track {background: rgb(27, 17, 42); }
-    ::-webkit-scrollbar-thumb {background:transparent; }
-    ::-webkit-scrollbar-thumb:hover {background: rgba(255, 75, 168,.75); }
+    <style>
+      ::-webkit-scrollbar {
+        width: 6px;
+        cursor: auto;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgb(27, 17, 42);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 75, 168, 0.75);
+      }
     </style>
-    
-</head>
-    
-<body>
-    
+  </head>
 
-  <!--- toggle sm-->
+  <body>
+    <!--- toggle sm-->
 
-  <div class="pos-f-t d-md-none toggle-sm">
-    <div class="collapse" id="toggle-sm">
-
-      <div class=" p-4">
-        <ul class="list-unstyled navigate">
-          <li>About</li>
-          <li>Work</li>
-          <li>Labs</li>
-          <li>Contact</li>
-        </ul>
-        <ul class="ico-social  list-unstyled mt-1">
-          <li><a href=""><i class="fab fa-facebook-f "></i></a></li>
-          <li><a href=""><i class="fab fa-twitter"></i></a></li>
-          <li><a href=""><i class="fab fa-github"></i></a></li>
-          <li><a href=""><i class="fab fa-instagram"></i></a></li>
-        </ul>
+    <div class="pos-f-t d-md-none toggle-sm">
+      <div class="collapse" id="toggle-sm">
+        <div class="p-4">
+          <ul class="list-unstyled navigate">
+            <li>About</li>
+            <li>Work</li>
+            <li>Labs</li>
+            <li>Contact</li>
+          </ul>
+          <ul class="ico-social list-unstyled mt-1">
+            <li>
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-github"></i></a>
+            </li>
+            <!--<li>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </li>-->
+          </ul>
+        </div>
       </div>
+      <nav class="navbar navbar-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#toggle-sm"
+          aria-controls="toggle-sm"
+          aria-expanded="false"
+          aria-label="toggle-sm"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
     </div>
-    <nav class="navbar navbar-dark ">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggle-sm" aria-controls="toggle-sm"
-        aria-expanded="false" aria-label="toggle-sm">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </nav>
-  </div>
-  <!--- end toggle sm-->
+    <!--- end toggle sm-->
 
-  <div class="container-fluid">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- nav left-->
 
-    <div class="row">
+        <div
+          class="col-12 d-none d-md-inline-block col-md-3 col-lg-2 nav-left wow fadeInLeft"
+          data-wow-duration="1.5s"
+        >
+          <img src="images/avatar2.png" alt="avatar2" class="img-fluid d-block" />
 
-      <!-- nav left-->
+          <ul class="list-unstyled navigate">
+            <li>About</li>
+            <li>Work</li>
+            <li>Labs</li>
+            <li>Contact</li>
+          </ul>
 
-      <div class="col-12  d-none d-md-inline-block  col-md-3   col-lg-2 nav-left wow fadeInLeft " data-wow-duration="1.5s">
+          <ul class="ico-social list-unstyled">
+            <li>
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-github"></i></a>
+            </li>
+            <!--<li>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </li>-->
+          </ul>
+        </div>
 
-        <img src="images/avatar2.png" alt="avatar2" class="img-fluid d-block ">
+        <!--end  nav left-->
 
-        <ul class="list-unstyled navigate">
-          <li>About</li>
-          <li>Work</li>
-          <li>Labs</li>
-          <li>Contact</li>
-        </ul>
+        <!-- right element-->
+        <div class="col-12 col-md-9 col-lg-10 right-element">
+          <section class="section-about">
+            <div class="container">
+              <h2 class="h1 about-h wow fadeInRight">About</h2>
 
-        <ul class="ico-social  list-unstyled  ">
-          <li><a href=""><i class="fab fa-facebook-f "></i></a></li>
-          <li><a href=""><i class="fab fa-twitter"></i></a></li>
-          <li><a href=""><i class="fab fa-github"></i></a></li>
-          <li><a href=""><i class="fab fa-instagram"></i></a></li>
-        </ul>
-          
-        
-      </div>
+              <div class="row">
+                <div class="col-md-7 wow fadeInRight">
+                  <h2 class="h1 about-h-2">Nguyen Nhat<span>.</span></h2>
 
-      <!--end  nav left-->
+                  <h3>Full-stack web developer</h3>
 
-      <!-- right element-->
-      <div class="col-12  col-md-9 col-lg-10  right-element ">
-
-        <section class="section-about">
-
-          <div class="container">
-
-            <h2 class="h1 about-h wow fadeInRight">About</h2>
-
-            <div class="row">
-
-              <div class=" col-md-7 wow fadeInRight">
-
-                <h2 class="h1 about-h-2">Vijay Verma<span>.</span></h2>
-
-                <h3>Freelance Product Designer</h3>
-
-                <p class="lead">Currently curating design for new startups and founders. Also love to code in<span>
-                    Laravel</span> and <span>Ruby</span>
+                  <p class="lead">
+                    I have been teaching myself web development for the past year with
+                    prior experence as an e-commerce operator in the state.
                   </p>
 
-                <a href="" class="btn bt1 hvr-grow">Hire me</a>
+                  <a href="" class="btn bt1 hvr-grow">My projects</a>
 
-                <a href="" class="btn bt2 hvr-grow ">Know more</a>
+                  <a href="" class="btn bt2 hvr-grow">CV</a>
 
-                <div class="client">
+                  <div class="client">
+                    <h5>Main Tech Stack</h5>
+                    <span>/</span>
 
-                  <h5>Previous Client </h5> <span>/</span>
+                    <img
+                      src="./images/icon/React-icon.svg"
+                      alt="ReactJs"
+                      width="49px"
+                      height="auto"
+                    />
+                    <img
+                      src="./images/icon/Node-icon.svg"
+                      alt="NodeJs"
+                      width="49px"
+                      height="auto"
+                    />
+                    <img
+                      src="./images/icon/Mongo-icon.svg"
+                      alt="MongoDb"
+                      width="49px"
+                      height="auto"
+                    />
+                    <img
+                      src="./images/icon/Postgres-icon.svg"
+                      alt="Postgres"
+                      width="49px"
+                      height="auto"
+                    />
+                  </div>
 
-                  <img src="images/icon/client1.png" alt="client1">
-                  <img src="images/icon/client2.png" alt="client2">
-                  <img src="images/icon/client3.png" alt="client3">
-                  <img src="images/icon/client4.png" alt="client4">
+                  <div class="end-about">
+                    <img src="images/icon/q.png" alt="quote" />
 
+                    <span class="h3">Stay Hungry. Stay Foolish</span>
+                  </div>
                 </div>
 
-                <div class="end-about">
-
-                  <img src="images/icon/q.png" alt="client4">
-
-                  <span class="h3">Stay Hungry. Stay Foolish</span>
-
+                <div class="col-md-5 d-none d-md-inline-block wow fadeInRight">
+                  <img src="images/avatar.png" class="img-fluid" alt="avatar" />
                 </div>
-
               </div>
-
-              <div class="col-md-5 d-none d-md-inline-block wow fadeInRight">
-
-                <img src="images/avatar.png" class="img-fluid " alt="avatar">
-
-              </div>
-
             </div>
-
-          </div>
-
-        </section>
-        <!-- start work section-->
-        <section class="section-work  ">
-
-          <div class="container text-center">
-            <h2 class="h1 work-h">Work</h2>
-
-            <div class="row">
-
-              <div class=" col-12 col-sm-6 col-lg-4 wow fadeInUp">
-
-                <div class="work-contain">
-
-                  <img src="images/work/frerrero.png" class="img-fluid" alt="Frerrero PSD Template">
-
-                  <h5>Frerrero PSD Template</h5>
-
-                </div>
-
-              </div>
-
-              <div class=" col-12 col-sm-6 col-lg-4 wow fadeInUp">
-
-                <div class="work-contain">
-
-                  <img src="images/work/power-pen.png" class="img-fluid" alt="Power of pen tools">
-
-                  <h5>Power of pen tools</h5>
-
-                </div>
-
-              </div>
-
-              <div class=" col-12 col-sm-6 col-lg-4 wow fadeInUp">
-
-                <div class="work-contain">
-
-                  <img src="images/work/designer-fav.png" class="img-fluid" alt="Designer Favorite Tools">
-
-                  <h5>Designer Favorite Tools</h5>
-
-                </div>
-
-              </div>
-
-              <div class=" col-12 col-sm-6 col-lg-4 wow fadeInUp">
-
-                <div class="work-contain">
-
-                  <img src="images/work/workspace.png" class="img-fluid" alt="Office Workspace">
-
-                  <h5>Office Workspace</h5>
-
-                </div>
-
-              </div>
-
-              <div class=" col-12 col-sm-6 col-lg-4 wow fadeInUp">
-
-                <div class="work-contain">
-
-                  <img src="images/work/velocity.png" class="img-fluid" alt="Velocity 6 Template">
-
-                  <h5>Velocity 6 Template</h5>
-
-                </div>
-
-              </div>
-
-              <div class="col-12  col-sm-6 col-lg-4 wow fadeInUp">
-
-                <div class="work-contain">
-
-                  <img src="images/work/installation-infographic.png" class="img-fluid" alt="Installation Infographic">
-
-                  <h5>Installation Infographic</h5>
-
-                </div>
-
-              </div>
-
-              <div class=" col-12 col-sm-6 col-lg-4 wow fadeInUp">
-
-                <div class="work-contain">
-
-                  <img src="images/work/favorite-di.png" class="img-fluid" alt="Designer Favorite">
-
-                  <h5>Designer Favorite</h5>
-
-                </div>
-
-              </div>
-
-              <div class=" col-12 col-sm-6 col-lg-4 wow fadeInUp">
-
-                <div class="work-contain">
-
-                  <img src="images/work/france.png" style="height: 170px" class="img-fluid" alt="France Template">
-
-                  <h5>France Template</h5>
-
-                </div>
-
-              </div>
-
-              <div class=" col-12 col-sm-6 col-lg-4 wow fadeInUp">
-
-                <div class="work-contain">
-
-                  <img src="images/work/happy-freelance-designer.png" class="img-fluid" alt="Happy Freelance">
-
-                  <h5>Happy Freelance Designer</h5>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </section>
-
-        <!-- end work section-->
-
-        <!-- labs section-->
-
-        <section class="section-labs ">
-
-          <div class="container">
-            <h2 class="h1 labs-h">Labs</h2>
-
-            <div class="row">
-
-              <div class="col-12 col-md-6 col-lg-4 wow fadeInUp">
-                <div class="card" style="width: 100%;">
-                  <img class="card-img-top" src="images/labs/colorsup.png" alt="Card image cap">
-                  <div class="card-body">
-                    <h5>Colorsup</h5>
-                    <p class="card-text">example text to build on the card title and make up the bulk of the card's
-                      content.
-                      <a href="">check now</a>
-                    </p>
-
+          </section>
+          <!-- start work section-->
+          <section class="section-work">
+            <div class="container text-center">
+              <h2 class="h1 work-h">Work</h2>
+
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp">
+                  <div class="work-contain">
+                    <img
+                      src="images/work/frerrero.png"
+                      class="img-fluid"
+                      alt="Frerrero PSD Template"
+                    />
+
+                    <h5>Frerrero PSD Template</h5>
                   </div>
                 </div>
-              </div>
 
-              <div class="col-12 col-md-6 col-lg-4 wow fadeInUp">
-                <div class="card" style="width: 100%;">
-                  <img class="card-img-top" src="images/labs/grasp8.png" alt="Card image cap">
-                  <div class="card-body">
-                    <h5>Colorsup</h5>
-                    <p class="card-text"> example text to build on the card title and make up the bulk of the card's
-                      content.
-                      <a href="">check now</a>
-                    </p>
+                <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp">
+                  <div class="work-contain">
+                    <img
+                      src="images/work/power-pen.png"
+                      class="img-fluid"
+                      alt="Power of pen tools"
+                    />
 
+                    <h5>Power of pen tools</h5>
                   </div>
                 </div>
-              </div>
 
-              <div class="col-12 col-md-6 col-lg-4 wow fadeInUp">
-                <div class="card" style="width: 100%;">
-                  <img class="card-img-top" src="images/labs/colorsup.png" alt="Card image cap">
-                  <div class="card-body">
-                    <h5>Colorsup</h5>
-                    <p class="card-text">example text to build on the card title and make up the bulk of the card's
-                      content.
-                      <a href="">check now</a>
-                    </p>
+                <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp">
+                  <div class="work-contain">
+                    <img
+                      src="images/work/designer-fav.png"
+                      class="img-fluid"
+                      alt="Designer Favorite Tools"
+                    />
 
+                    <h5>Designer Favorite Tools</h5>
                   </div>
                 </div>
-              </div>
 
-              <div class="col-12 col-md-6 col-lg-4 wow fadeInUp">
-                <div class="card" style="width: 100%">
-                  <img class="card-img-top" src="images/labs/fmradio.png" alt="Card image cap">
-                  <div class="card-body">
-                    <h5>Colorsup</h5>
-                    <p class="card-text"> example text to build on the card title and make up the bulk of the card's
-                      content.
-                      <a href="">check now</a>
-                    </p>
+                <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp">
+                  <div class="work-contain">
+                    <img
+                      src="images/work/workspace.png"
+                      class="img-fluid"
+                      alt="Office Workspace"
+                    />
 
+                    <h5>Office Workspace</h5>
                   </div>
                 </div>
-              </div>
 
-              <div class="col-12 col-md-6 col-lg-4 wow fadeInUp">
-                <div class="card" style="width: 100%">
-                  <img class="card-img-top" src="images/labs/zikan.png" alt="Card image cap">
-                  <div class="card-body">
-                    <h5>Colorsup</h5>
-                    <p class="card-text">example text to build on the card title and make up the bulk of the card's
-                      content.
-                      <a href="">check now</a>
-                    </p>
+                <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp">
+                  <div class="work-contain">
+                    <img
+                      src="images/work/velocity.png"
+                      class="img-fluid"
+                      alt="Velocity 6 Template"
+                    />
+
+                    <h5>Velocity 6 Template</h5>
                   </div>
                 </div>
-              </div>
 
-              <div class="col-12 col-md-6 col-lg-4 wow fadeInUp">
-                <div class="card" style="width: 100%">
-                  <img class="card-img-top" src="images/labs/fmradio.png" alt="Card image cap">
-                  <div class="card-body">
-                    <h5>Colorsup</h5>
-                    <p class="card-text"> example text to build on the card title and make up the bulk of the card's
-                      content.
-                      <a href="">check now</a>
-                    </p>
+                <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp">
+                  <div class="work-contain">
+                    <img
+                      src="images/work/installation-infographic.png"
+                      class="img-fluid"
+                      alt="Installation Infographic"
+                    />
+
+                    <h5>Installation Infographic</h5>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp">
+                  <div class="work-contain">
+                    <img
+                      src="images/work/favorite-di.png"
+                      class="img-fluid"
+                      alt="Designer Favorite"
+                    />
+
+                    <h5>Designer Favorite</h5>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp">
+                  <div class="work-contain">
+                    <img
+                      src="images/work/france.png"
+                      style="height: 170px;"
+                      class="img-fluid"
+                      alt="France Template"
+                    />
+
+                    <h5>France Template</h5>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp">
+                  <div class="work-contain">
+                    <img
+                      src="images/work/happy-freelance-designer.png"
+                      class="img-fluid"
+                      alt="Happy Freelance"
+                    />
+
+                    <h5>Happy Freelance Designer</h5>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <!--end  labs section-->
+          </section>
 
-        <!--start contact section-->
+          <!-- end work section-->
 
-        <section class="section-contact  " data-wow-duration="1.5s">
+          <!-- labs section-->
 
-          <div class="container">
-            <h2 class="h1 contact-h  wow fadeInRight">Contact</h2>
-            <h3 class="wow fadeInRight"> Project brief description </h3>
+          <section class="section-labs">
+            <div class="container">
+              <h2 class="h1 labs-h">Labs</h2>
 
-            <div class="form-group wow fadeInRight">
-              <textarea class="form-control" placeholder="Project Type, Target customer, Timeline, estimate etc"></textarea>
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 wow fadeInUp">
+                  <div class="card" style="width: 100%;">
+                    <img
+                      class="card-img-top"
+                      src="images/labs/colorsup.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <h5>Colorsup</h5>
+                      <p class="card-text">
+                        example text to build on the card title and make up the bulk of
+                        the card's content.
+                        <a href="">check now</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 wow fadeInUp">
+                  <div class="card" style="width: 100%;">
+                    <img
+                      class="card-img-top"
+                      src="images/labs/grasp8.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <h5>Colorsup</h5>
+                      <p class="card-text">
+                        example text to build on the card title and make up the bulk of
+                        the card's content.
+                        <a href="">check now</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 wow fadeInUp">
+                  <div class="card" style="width: 100%;">
+                    <img
+                      class="card-img-top"
+                      src="images/labs/colorsup.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <h5>Colorsup</h5>
+                      <p class="card-text">
+                        example text to build on the card title and make up the bulk of
+                        the card's content.
+                        <a href="">check now</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 wow fadeInUp">
+                  <div class="card" style="width: 100%;">
+                    <img
+                      class="card-img-top"
+                      src="images/labs/fmradio.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <h5>Colorsup</h5>
+                      <p class="card-text">
+                        example text to build on the card title and make up the bulk of
+                        the card's content.
+                        <a href="">check now</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 wow fadeInUp">
+                  <div class="card" style="width: 100%;">
+                    <img
+                      class="card-img-top"
+                      src="images/labs/zikan.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <h5>Colorsup</h5>
+                      <p class="card-text">
+                        example text to build on the card title and make up the bulk of
+                        the card's content.
+                        <a href="">check now</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 wow fadeInUp">
+                  <div class="card" style="width: 100%;">
+                    <img
+                      class="card-img-top"
+                      src="images/labs/fmradio.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <h5>Colorsup</h5>
+                      <p class="card-text">
+                        example text to build on the card title and make up the bulk of
+                        the card's content.
+                        <a href="">check now</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </section>
+          <!--end  labs section-->
 
-            <h3 class=" wow fadeInRight"> About You</h3>
+          <!--start contact section-->
 
-            <div class="row  wow fadeInRight">
+          <section class="section-contact" data-wow-duration="1.5s">
+            <div class="container">
+              <h2 class="h1 contact-h wow fadeInRight">Contact</h2>
+              <h3 class="wow fadeInRight">Project brief description</h3>
 
-              <div class="col-sm-12 col-lg-6 ">
-
-                <div class="form-group">
-                  <input type="text" placeholder="Full Name" class="form-control">
-                </div>
-                <div class="form-group">
-                  <input type="text" placeholder="Company Name" class="form-control">
-                </div>
-                  
+              <div class="form-group wow fadeInRight">
+                <textarea
+                  class="form-control"
+                  placeholder="Project Type, Target customer, Timeline, estimate etc"
+                ></textarea>
               </div>
 
-              <div class="col-sm-12 col-lg-6 ">
+              <h3 class="wow fadeInRight">About You</h3>
 
-                <div class="form-group">
-                  <input type="text" placeholder="Email Address" class="form-control">
-                </div>
-                <div class="form-group">
-                  <input type="text" placeholder="Position" class="form-control">
+              <div class="row wow fadeInRight">
+                <div class="col-sm-12 col-lg-6">
+                  <div class="form-group">
+                    <input type="text" placeholder="Full Name" class="form-control" />
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="Company Name" class="form-control" />
+                  </div>
                 </div>
 
+                <div class="col-sm-12 col-lg-6">
+                  <div class="form-group">
+                    <input type="text" placeholder="Email Address" class="form-control" />
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="Position" class="form-control" />
+                  </div>
+                </div>
+              </div>
+              <div class="wow fadeInRight">
+                <a href="#" class="btn hvr-grow">Request a Quote</a>
+                <div class="social">
+                  <a href=""
+                    ><i style="margin-left: 10px;" class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-github"></i></a>
+                </div>
               </div>
             </div>
-            <div class=" wow fadeInRight">
-              <a href="#" class="btn hvr-grow ">Request a Quote</a>
-              <div class="social ">
-                <a href=""><i style="margin-left:10px" class="fab fa-facebook-f "></i></a>
-                <a href=""><i class="fab fa-twitter"></i></a>
-                <a href=""><i class="fab fa-github"></i></a>
-                <a href=""><i class="fab fa-instagram"></i></a>
-              </div>
-            </div>
+          </section>
 
-          </div>
-        </section>
-
-        <!--end contact section-->
+          <!--end contact section-->
+        </div>
       </div>
     </div>
-  </div>
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.nicescroll.js"></script>
-  <script src="js/plugin.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script>
-      
-    $('.section-labs').hide();
-    $('.section-work').hide();
-    $('.section-contact').hide();
-    new WOW().init();
-  </script>
-    
-</body>
-
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      $('.section-labs').hide();
+      $('.section-work').hide();
+      $('.section-contact').hide();
+      new WOW().init();
+    </script>
+  </body>
 </html>
