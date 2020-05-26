@@ -1,6 +1,6 @@
 /* body*/
 body {
-  background: url('../images/bg.png') no-repeat fixed;
+  background: url('../images/bg1.png') no-repeat fixed;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -15,7 +15,7 @@ body {
 .section-contact .social i:hover,
 .section-about .client span,
 .section-about .about-h-2 span {
-  color: #ff4ba8;
+  color: #02d196;
 }
 
 .section-about,
@@ -65,7 +65,7 @@ body {
 
 .nav-left ul.navigate li:first-child,
 .toggle-sm ul.navigate li:first-child {
-  border-left: 5px solid #ff4ba8;
+  border-left: 5px solid #02d196;
 }
 
 .nav-left ul.navigate li {
@@ -162,7 +162,7 @@ span.h3,
 .section-work .work-h,
 .section-labs .labs-h,
 .section-contact .contact-h {
-  border-bottom: 3px solid #ff4ba8;
+  border-bottom: 3px solid #02d196;
 }
 
 .section-about .about-h {
@@ -194,7 +194,7 @@ span.h3,
 }
 .section-contact .btn,
 .section-about .bt1 {
-  background-color: #ff4ba8;
+  background-color: #02d196;
 }
 
 .section-about .bt1,
@@ -207,7 +207,7 @@ span.h3,
 
 .section-about .bt1,
 .section-contact .btn {
-  border-color: #ff4ba8;
+  border-color: #02d196;
 }
 
 .section-about .bt1,
@@ -230,14 +230,14 @@ body,
 }
 
 .section-about .bt2 {
-  background-color: rgba(66, 30, 56, 0.5);
+  background-color: rgba(30, 66, 58, 0.384);
 }
 
 .section-about .bt2:focus,
 .section-about .bt1:focus,
 .section-contact textarea:focus,
 .section-contact input:focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 75, 168, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(75, 255, 195, 0.25);
 }
 
 .section-about .client,
@@ -369,7 +369,7 @@ span.h3 {
 }
 
 .section-labs .card a {
-  color: #c73f8b;
+  color: #00ba85;
   display: block;
 }
 
@@ -418,7 +418,7 @@ span.h3 {
 .section-contact textarea {
   height: 180px;
   margin-top: 30px;
-  border: 1px solid rgba(144, 103, 103, 0.7);
+  border: 1px solid rgba(103, 144, 128, 0.7);
   margin-bottom: 40px;
 }
 
@@ -429,7 +429,7 @@ span.h3 {
 }
 
 .section-contact input {
-  border: 1px solid rgba(144, 103, 103, 0.7);
+  border: 1px solid rgba(103, 144, 128, 0.7);
   height: 50px;
 }
 
@@ -486,9 +486,9 @@ span.h3 {
 /* small*/
 @media (min-width: 768px) and (max-width: 991px) {
   /** section about*/
-  .section-about img[src='images/avatar.png'] {
+  /* .section-about img[src='images/avatar.png'] {
     display: none;
-  }
+  } */
   .section-about .end-about span.h3 {
     font-size: 26px;
   }
