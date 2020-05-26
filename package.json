@@ -8,5 +8,11 @@
     "dev": "nodemon index"
   },
   "author": "Nhat nguyen",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
