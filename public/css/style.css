@@ -56,7 +56,7 @@ body {
 }
 
 .nav-left img {
-  margin: 104px 20px 0 0;
+  margin: 104px auto 0 auto;
 }
 
 .nav-left ul.navigate {
