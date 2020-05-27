@@ -1,3 +1,29 @@
+.toltip {
+  position: relative;
+  display: inline-block;
+}
+
+.toltip .toltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -20px;
+}
+
+.toltip:hover .toltiptext {
+  visibility: visible;
+}
+
 /* body*/
 body {
   background: url('../images/bg1.png') no-repeat fixed;
@@ -43,7 +69,7 @@ body {
 }
 
 .nav-left ul.navigate li,
-.section-labs .card,
+.section-projects .card,
 .section-contact .social,
 .section-contact .row {
   margin-bottom: 20px;
@@ -138,8 +164,8 @@ body {
 }
 
 .section-about .about-h,
-.section-work .work-h,
-.section-labs .labs-h,
+.section-cv .cv-h,
+.section-projects .projects-h,
 .section-contact .contact-h {
   margin-top: 98px;
 }
@@ -149,24 +175,24 @@ body {
 .section-about .client h5,
 .section-about .client span,
 span.h3,
-.section-work .work-h,
-.section-work .work-contain h5,
-.section-labs .labs-h,
-.section-labs .card-body h5,
+.section-cv .cv-h,
+.section-cv .work-contain h5,
+.section-projects .projects-h,
+.section-projects .card-body h5,
 .section-contact h3,
 .section-contact .contact-h {
   font-weight: 300;
 }
 
 .section-about .about-h,
-.section-work .work-h,
-.section-labs .labs-h,
+.section-cv .cv-h,
+.section-projects .projects-h,
 .section-contact .contact-h {
   border-bottom: 3px solid #02d196;
 }
 
 .section-about .about-h {
-  width: 110px;
+  width: min-content;
 }
 
 .section-about .about-h-2 {
@@ -182,7 +208,7 @@ span.h3,
   font-size: 80px;
 }
 
-.section-labs .card a::after,
+.section-projects .card a::after,
 .section-about .about-h-2 span {
   font-weight: 600;
 }
@@ -265,8 +291,8 @@ body,
 }
 
 .section-about .client h5,
-.section-work .work-h {
-  width: 90px;
+.section-cv .cv-h {
+  width: min-content;
 }
 
 .section-about .client span {
@@ -278,9 +304,9 @@ body,
   position: relative;
 }
 
-.section-work,
+.section-cv,
 .end-about,
-.section-labs {
+.section-projects {
   padding-bottom: 30px;
 }
 
@@ -301,7 +327,7 @@ span.h3 {
 }
 
 .section-about img[src='images/avatar.png']:hover,
-.section-work img:hover {
+.section-cv img:hover {
   opacity: 1;
   filter: alpha(opacity=100); /* 5. 6*/
   -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)'; /* 8*/
@@ -329,15 +355,15 @@ span.h3 {
   transform: scale(1.03);
 }
 
-.section-work .work-contain {
+.section-cv .work-contain {
   margin-top: 40px;
 }
 
-.section-work .work-contain h5 {
+.section-cv .work-contain h5 {
   margin-top: 15px;
 }
 
-.section-work img {
+.section-cv img {
   opacity: 0.7;
   filter: alpha(opacity=70); /* 5. 6*/
   -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=70)'; /* 8*/
@@ -349,37 +375,37 @@ span.h3 {
   transition: all 0.5s ease-in-out;
 }
 
-.section-labs {
+.section-projects {
   padding-right: 30px;
 }
 
-.section-labs .labs-h {
-  width: 77px;
+.section-projects .projects-h {
+  width: min-content;
 }
 
 .section-contact .contact-h,
-.section-labs .labs-h {
+.section-projects .projects-h {
   margin-bottom: 30px;
 }
 
-.section-labs .card {
+.section-projects .card {
   background-color: #1e1a34;
 }
 
-.section-labs .card-text:last-child {
+.section-projects .card-text:last-child {
   color: #5a5572;
 }
 
-.section-labs .card a {
+.section-projects .card a {
   color: #00ba85;
   display: block;
 }
 
-.section-labs .card a:hover {
+.section-projects .card a:hover {
   text-decoration: none;
 }
 
-.section-labs .card a::after {
+.section-projects .card a::after {
   margin-left: 3px;
   font-family: 'Font Awesome 5 Free';
   font-size: 13px;
@@ -390,7 +416,7 @@ span.h3 {
   transition: all 0.5s ease;
 }
 
-.section-labs .card a:hover::after {
+.section-projects .card a:hover::after {
   margin-left: 10px;
 }
 
@@ -399,7 +425,7 @@ span.h3 {
 }
 
 .section-contact .contact-h {
-  width: 132px;
+  width: min-content;
 }
 
 .section-contact h3 {
@@ -454,6 +480,26 @@ span.h3 {
 }
 
 /* start media query*/
+/*phones*/
+@media (max-width: 460px) {
+  /** section about*/
+  .section-about .about-h,
+  .section-cv .cv-h,
+  .section-projects .projects-h,
+  .section-contact .contact-h {
+    margin-top: 46px;
+  }
+  .section-about .about-h-2 {
+    margin-top: 60px;
+  }
+  .section-about .bt1,
+  .section-about .bt2 {
+    width: 45%;
+  }
+  .section-about .client h5 {
+    width: 55px;
+  }
+}
 /*phones and tablet*/
 @media (max-width: 767px) {
   /** section about*/

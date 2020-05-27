@@ -9,8 +9,8 @@ $(document).ready(function () {
 
   zero0.on('click', function () {
     $('.section-about').fadeIn();
-    $('.section-work').fadeOut();
-    $('.section-labs').fadeOut();
+    $('.section-cv').fadeOut();
+    $('.section-projects').fadeOut();
     $('.section-contact').fadeOut();
     $(this).css({ color: '#00BA85', 'border-left': '5px solid #02D196' }).end();
     one1.css({ color: '#fff', 'border-left': '0px solid transparent' }).end();
@@ -20,8 +20,8 @@ $(document).ready(function () {
 
   one1.on('click', function () {
     $('.section-about').fadeOut();
-    $('.section-work').fadeIn();
-    $('.section-labs').fadeOut();
+    $('.section-cv').fadeIn();
+    $('.section-projects').fadeOut();
     $('.section-contact').fadeOut();
     $(this).css({ color: '#00BA85', 'border-left': '5px solid #02D196' }).end();
     zero0.css({ color: '#fff', 'border-left': '0px solid transparent' }).end();
@@ -31,9 +31,9 @@ $(document).ready(function () {
 
   two2.on('click', function () {
     $('.section-about').fadeOut();
-    $('.section-work').fadeOut();
+    $('.section-cv').fadeOut();
     $('.section-contact').fadeOut();
-    $('.section-labs').fadeIn();
+    $('.section-projects').fadeIn();
     $(this).css({ color: '#00BA85', 'border-left': '5px solid #02D196' }).end();
     zero0.css({ color: '#fff', 'border-left': '0px solid transparent' }).end();
     one1.css({ color: '#fff', 'border-left': '0px solid transparent' }).end();
@@ -41,8 +41,8 @@ $(document).ready(function () {
   });
   three3.on('click', function () {
     $('.section-about').fadeOut();
-    $('.section-work').fadeOut();
-    $('.section-labs').fadeOut();
+    $('.section-cv').fadeOut();
+    $('.section-projects').fadeOut();
     $('.section-contact').fadeIn();
     $(this).css({ color: '#00BA85', 'border-left': '5px solid #02D196' }).end();
     zero0.css({ color: '#fff', 'border-left': '0px solid transparent' }).end();
