@@ -457,7 +457,10 @@ span.h3 {
 /*phones*/
 @media (max-width: 460px) {
   /** section about*/
-  .section-about .about-h {
+  .section-about .about-h,
+  .section-work .work-h,
+  .section-labs .labs-h,
+  .section-contact .contact-h {
     margin-top: 46px;
   }
   .section-about .about-h-2 {
