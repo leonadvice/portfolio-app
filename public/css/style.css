@@ -1,3 +1,29 @@
+.toltip {
+  position: relative;
+  display: inline-block;
+}
+
+.toltip .toltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -20px;
+}
+
+.toltip:hover .toltiptext {
+  visibility: visible;
+}
+
 /* body*/
 body {
   background: url('../images/bg1.png') no-repeat fixed;
