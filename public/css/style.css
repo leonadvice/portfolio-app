@@ -454,6 +454,23 @@ span.h3 {
 }
 
 /* start media query*/
+/*phones*/
+@media (max-width: 460px) {
+  /** section about*/
+  .section-about .about-h {
+    margin-top: 46px;
+  }
+  .section-about .about-h-2 {
+    margin-top: 60px;
+  }
+  .section-about .bt1,
+  .section-about .bt2 {
+    width: 45%;
+  }
+  .section-about .client h5 {
+    width: 55px;
+  }
+}
 /*phones and tablet*/
 @media (max-width: 767px) {
   /** section about*/
