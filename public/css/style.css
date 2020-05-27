@@ -172,8 +172,10 @@ span.h3,
 .section-about .about-h-2 {
   margin-top: 120px;
   margin-bottom: 15px;
-  font-size: 60px;
-  font-family: 'Nova Round', cursive;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  /*font-family: 'Nova Round', cursive;*/
 }
 
 .section-about .about-h-2 span {
@@ -486,9 +488,9 @@ span.h3 {
 /* small*/
 @media (min-width: 768px) and (max-width: 991px) {
   /** section about*/
-  /* .section-about img[src='images/avatar.png'] {
+  .section-about img[src='images/avatar.png'] {
     display: none;
-  } */
+  }
   .section-about .end-about span.h3 {
     font-size: 26px;
   }
