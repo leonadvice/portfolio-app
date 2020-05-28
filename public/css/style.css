@@ -1,3 +1,11 @@
+.err {
+  color: #d64933;
+}
+
+.ok {
+  color: #02d196;
+}
+
 .toltip {
   position: relative;
   display: inline-block;

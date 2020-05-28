@@ -275,9 +275,9 @@
               <h3 class="wow fadeInRight">
                 Send me a message and I will get back to you within 48 hours.
               </h3>
-
+              <form id='chatForm'>
               <div class="form-group wow fadeInRight">
-                <textarea class="form-control" placeholder="Messages..."></textarea>
+                <textarea id='message' class="form-control" placeholder="Messages..."></textarea>
               </div>
 
               <h3 class="wow fadeInRight">About You</h3>
@@ -286,6 +286,7 @@
                 <div class="col-sm-12 col-lg-6">
                   <div class="form-group">
                     <input
+                      id='name'
                       type="text"
                       placeholder="Name, organization..."
                       class="form-control"
@@ -295,12 +296,12 @@
 
                 <div class="col-sm-12 col-lg-6">
                   <div class="form-group">
-                    <input type="text" placeholder="Email Address" class="form-control" />
+                    <input id='email' type="text" placeholder="Email Address" class="form-control" />
                   </div>
                 </div>
               </div>
-              <div class="wow fadeInRight">
-                <a href="#" class="btn hvr-grow">Send</a>
+              <div class="row wow fadeInRight" style="margin: 20px 0px 20px 0px">
+                <button class="btn hvr-grow">Send</button>
                 <div class="social">
                   <a href="https://github.com/Nhat-Nguyen-011" target="_blank"
                     ><i style="margin-left: 10px;" class="fab fa-github"></i
@@ -309,7 +310,9 @@
                   <a href="mailto:nhat.nguyen1125@gmail.com" target="_blank"><i class="fas fa-at"></i></a>
                   <a href="tel:+84-902-239-717" class="toltip" target="_blank"><span class="toltiptext">+84 (902) 239 717</span><i class="fas fa-phone"></i></a>
               </div>
+              <div class="col-12" style="margin-top:15px; padding-left: 0px" id="response"></div>
             </div>
+          </form>
           </section>
 
           <!--end contact section-->
@@ -328,5 +331,6 @@
       $('.section-contact').hide();
       new WOW().init();
     </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
