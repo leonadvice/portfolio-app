@@ -576,3 +576,10 @@ span.h3 {
   /**end  section about*/
 }
 /*end media query*/
+
+.avatar {
+  width: 148px;
+  height: auto;
+  border-radius: 50%;
+  border: 6px solid #02d196;
+}

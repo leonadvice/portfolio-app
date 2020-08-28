@@ -1,3 +1,11 @@
+const openCV = () => {
+  document.getElementById('cv-button').click();
+};
+
+const openProjects = () => {
+  document.getElementById('projects-button').click();
+};
+
 const chatForm = document.getElementById('chatForm');
 
 chatForm.addEventListener('submit', (e) => {
@@ -8,13 +16,13 @@ chatForm.addEventListener('submit', (e) => {
       method: 'POST',
       headers: {
         Accept: 'application/json',
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({
         email: e.target.elements.email.value,
         name: e.target.elements.name.value,
-        message: e.target.elements.message.value,
-      }),
+        message: e.target.elements.message.value
+      })
     });
     const response = await request.json();
 

@@ -81,12 +81,12 @@
           class="col-12 d-none d-md-inline-block col-md-3 col-lg-2 nav-left wow fadeInLeft"
           data-wow-duration="1.5s"
         >
-          <img src="images/avatar2.png" alt="avatar2" class="img-fluid d-block" />
+          <img src="images/avatar2.png" alt="avatar2" class="img-fluid d-block avatar" />
 
           <ul class="list-unstyled navigate">
             <li>About</li>
-            <li>CV</li>
-            <li>Projects</li>
+            <li id="cv-button">CV</li>
+            <li id="projects-button">Projects</li>
             <li>Contact</li>
           </ul>
 
@@ -122,9 +122,9 @@
                     prior experence as an e-commerce operator in the state.
                   </p>
 
-                  <a href="" class="btn bt1 hvr-grow">My projects</a>
+                  <a onclick="openProjects()" class="btn bt1 hvr-grow">My projects</a>
 
-                  <a href="" class="btn bt2 hvr-grow">CV</a>
+                  <a onclick="openCV()" class="btn bt2 hvr-grow">CV</a>
 
                   <div class="client">
                     <h5>Tech Stack</h5>
@@ -175,7 +175,7 @@
               <h2 class="h1 cv-h">CV</h2>
               <div class="row">
                 <div class="col-12 wow fadeInUp">
-                  <iframe src="CV.pdf" width="100%" height="725px" style="margin-top: 40px;"> </iframe>
+                  <embed src="NguyenHuuMinhNhat.pdf" width="100%" height="725px" style="margin-top: 40px;" />
                 </div>
             </div>
             
@@ -184,87 +184,82 @@
           <!-- end work section-->
 
           <!-- projects section-->
+            <section class="section-projects">
+              <div class="container">
+                <h2 class="h1 projects-h">Projects</h2>
 
-          <section class="section-projects">
-            <div class="container">
-              <h2 class="h1 projects-h">Projects</h2>
-
-              <div class="row">
-                <div class="col-12 col-md-6 wow fadeInUp">
-                  <div class="card" style="width: 100%;">
-                    <img
-                      class="card-img-top"
-                      src="images/projects/colorsup.png"
-                      alt="Card image cap"
-                    />
-                    <div class="card-body">
-                      <h5>Colorsup</h5>
-                      <p class="card-text">
-                        example text to build on the card title and make up the bulk of
-                        the card's content.
-                        <a href="">check now</a>
-                      </p>
+                <div class="row">
+                  <div class="col-12 col-md-6 wow fadeInUp">
+                    <div class="card" style="width: 100%;">
+                      <img
+                        class="card-img-top"
+                        src="images/projects/bachviet-mockup.jpg"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <h5>bachvietcoffee.com</h5>
+                        <p class="card-text">
+                          A branding website built using Nextjs for SEO and Nodejs Mongodb as backend.
+                          <a href="/web-012">check now</a>
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col-12 col-md-6 wow fadeInUp">
-                  <div class="card" style="width: 100%;">
-                    <img
-                      class="card-img-top"
-                      src="images/projects/grasp8.png"
-                      alt="Card image cap"
-                    />
-                    <div class="card-body">
-                      <h5>Colorsup</h5>
-                      <p class="card-text">
-                        example text to build on the card title and make up the bulk of
-                        the card's content.
-                        <a href="">check now</a>
-                      </p>
+                  <div class="col-12 col-md-6 wow fadeInUp">
+                    <div class="card" style="width: 100%;">
+                      <img
+                        class="card-img-top"
+                        src="images/projects/seateach-mockup.jpg"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <h5>seatechcons.vn</h5>
+                        <p class="card-text">
+                          A branding website built using Nextjs for SEO and Nodejs Mongodb as backend.
+                          <a href="/web-019">check now</a>
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col-12 col-md-6 wow fadeInUp">
-                  <div class="card" style="width: 100%;">
-                    <img
-                      class="card-img-top"
-                      src="images/projects/colorsup.png"
-                      alt="Card image cap"
-                    />
-                    <div class="card-body">
-                      <h5>Colorsup</h5>
-                      <p class="card-text">
-                        example text to build on the card title and make up the bulk of
-                        the card's content.
-                        <a href="">check now</a>
-                      </p>
+                  <div class="col-12 col-md-6 wow fadeInUp">
+                    <div class="card" style="width: 100%;">
+                      <img
+                        class="card-img-top"
+                        src="images/projects/chatapp-mockup.jpg"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <h5>Chat app</h5>
+                        <p class="card-text">
+                          A chat application built using React, Nodejs, Mongodb, Socketio, WebRTC, docker, Kubernetes
+                          <a href="/chat-app">Coming Soon</a>
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col-12 col-md-6 wow fadeInUp">
-                  <div class="card" style="width: 100%;">
-                    <img
-                      class="card-img-top"
-                      src="images/projects/fmradio.png"
-                      alt="Card image cap"
-                    />
-                    <div class="card-body">
-                      <h5>Colorsup</h5>
-                      <p class="card-text">
-                        example text to build on the card title and make up the bulk of
-                        the card's content.
-                        <a href="">check now</a>
-                      </p>
+                  <div class="col-12 col-md-6 wow fadeInUp">
+                    <div class="card" style="width: 100%;">
+                      <img
+                        class="card-img-top"
+                        src="images/projects/tienlen-mockup.jpg"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <h5>13 - Tien Len</h5>
+                        <p class="card-text">
+                          A vietnamese card game that can be played online via web browser or Android. Built using React, Nodejs, Socketio, Kotlin, Mongodb
+                          <a href="">Coming Soon</a>
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
 
+                </div>
               </div>
-            </div>
-          </section>
+            </section>
           <!--end  projects section-->
 
           <!--start contact section-->
